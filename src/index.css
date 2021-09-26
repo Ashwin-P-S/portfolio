@@ -94,6 +94,7 @@ body {
     justify-content: center;
     justify-content: space-evenly;
 }
+
 .likes {
     border: 1px solid #e7e7e7;
     box-shadow: 0 4px 8px darkgray;
@@ -146,8 +147,48 @@ body {
     height: fit-content;
 } 
 .location > p > span { font-size: 3rem;color: rgb(45, 50, 60); }
+.location > p > span:hover { cursor: pointer; color: mediumpurple; transition: 1s; }
 
 .location > p{
     font-family: Gadugi;
     font-size: large;
+}
+.contact { display: flex; flex-direction: column; align-items: center;}
+.contactContainer {
+    padding: 1rem 2rem;
+    margin: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #e7e7e7;
+    box-shadow: 0 4px 8px darkgrey;
+}
+
+.contactContainer > a , .socialContainer > a{
+    text-decoration: none;
+    font-size: x-large;
+    margin-top: 10px;
+    color: rgb(45, 50, 60);
+    font-family: Poppins;
+}
+.socialContainer > a:hover{ color: mediumvioletred; transition: .2s; }
+.contactContainer > span {
+    font-size: 3rem;   
+}
+
+.socialContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+    padding: 1rem 2rem;
+    border: 1px solid #e7e7e7;
+    box-shadow: 0 4px 8px darkgrey;
+    width: fit-content;
+}
+.imageContainer > img {
+    margin: .5rem .5rem;
+    height: 2rem;
+    width: 2rem;
 }
