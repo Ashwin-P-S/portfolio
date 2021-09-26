@@ -1,8 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 * {
     padding: 0;
     margin: 0;
+}
+body {
+    background-color: ghostwhite;
 }
 
 .navbar {
@@ -27,6 +30,11 @@
     margin: .5rem 1rem;;
 }
 
+.welcome:hover {
+    color:aquamarine;
+    transition: 1s;
+}
+
 .links {
     margin: .5rem 1rem; 
     text-decoration: none;
@@ -42,17 +50,104 @@
     padding: 2rem;
     margin: 3rem;
     border: 1px solid #e7e7e7;
-    box-sizing: border-box;
-    box-shadow: 0 4px 8px solid darkgray;
+    box-shadow: 0 4px 8px darkgray;
+    text-align: center;
 }
 
 .container > p:nth-child(1){
     font-family: Gadugi, 'san-serif';
     color: darkslategrey;
     font-size: 2rem;
-}
+    cursor: pointer;
+} .container > p:nth-child(1):hover { color:black; transition: 2s; }
 
 .container > p:nth-child(2) {
     font-family: Poppins, 'sans-serif';
     font-size: x-large;
+}
+
+.subContainer > div {
+    padding: 2rem;
+    margin: 3rem;
+    font-family: Poppins, 'sans-serif';
+    font-size: x-large;
+    text-align: center;
+    text-shadow: 2px solid #e7e7e7;
+}
+
+.subContainer > p {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: Poppins, 'sans-serif';
+    padding: 2rem;
+    margin: 3rem;
+    font-size: 1.3rem;
+    background-color: whitesmoke;
+    border-left: 4.5px solid rgb(45, 50, 60);
+}
+
+.aboutContainer{
+    padding: 2rem;
+    margin: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+.likes {
+    border: 1px solid #e7e7e7;
+    box-shadow: 0 4px 8px darkgray;
+    padding: 2rem;
+    margin: 1.5rem;
+    text-align: center;
+}
+
+.likes > button {
+    text-decoration: none;
+    font-family: 'Lucida Sans';
+    margin-top: 20px;
+    font-size: large;
+    background-color: ghostwhite;
+    cursor: pointer;
+    border: 0;
+    color: blue;
+} .likes > button:hover { color: mediumvioletred; transition: .5s; }
+
+
+.likes > p {
+    font-family: Gadugi;
+    font-size: xx-large;
+}
+
+.aboutMe {
+    border: 1px solid #e7e7e7;
+    box-shadow: 0 4px 8px darkgray;
+    padding: 2rem;
+    margin: 1.5rem;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.aboutMe > p {
+    font-family: Poppins;
+    font-size: large;
+}
+.location {
+    
+    padding: 1rem;
+    margin: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+    height: fit-content;
+} 
+.location > p > span { font-size: 3rem;color: rgb(45, 50, 60); }
+
+.location > p{
+    font-family: Gadugi;
+    font-size: large;
 }

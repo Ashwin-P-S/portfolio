@@ -7,13 +7,17 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 function App() {
 
+  var count = 100;
   
   return (
     <Router>
       <NavBar />
       <Route path='/' exact component={ Home } />
+      <Route path='/about' exact render={ (props) => (
+        <About count={count} />
+      ) } />
       <Route path='/contact' exact component={ Contact } />
-      <Route path='/about' exact component={ About } />
+      
     </Router>
   );
 }
