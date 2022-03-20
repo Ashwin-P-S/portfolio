@@ -23,7 +23,7 @@ body {
 .linksContainer {
     display: flex;
     flex-wrap: wrap;
-    font-family: Gadugi, 'sans-serif';
+    font-family: Hack, 'sans-serif';
 }
 
 .welcome {
