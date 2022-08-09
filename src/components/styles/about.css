@@ -1,0 +1,129 @@
+@import url('https://db.onlinewebfonts.com/c/23c0fcab84d99da0de762de7e220a6e1?family=Europa');
+@import url('https://fonts.cdnfonts.com/css/eurostile');
+
+.about {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    place-items: center;
+    margin: 1.5rem 0;
+    padding: 1.5rem 0;
+}
+
+.aboutMe {
+    display: grid;
+    margin: 1rem;
+    box-shadow: 0 12px 15px rgba(0, 0, 0, .1);
+    border-radius: 1rem;
+    border: 1px solid rgba(0, 0, 0, .1);
+    height: 375px;
+    width: 375px;
+    padding: 16px;
+}
+
+.deg {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    place-items: center;
+    margin: 1rem 2rem;
+}
+
+.deg>p {
+    font-family: 'Eurostile', sans-serif;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.deg>div:nth-child(2) {
+    background-color: #5BE9B9;
+    width: fit-content;
+    border-radius: 100%;
+}
+
+.deg>div>img {
+    height: 45px;
+    width: 45px;
+    padding: 10px;
+}
+
+.score {
+    display: grid;
+    place-items: center;
+    margin: 5px;
+    padding: 5px;
+    font-family: 'Europa', sans-serif;
+    font-size: larger;
+    text-align: center;
+}
+
+.score>p {
+    margin: 16px;
+}
+
+
+span {
+    border-bottom: 2px solid black;
+    font-family: 'Eurostile', sans-serif;
+    font-weight: bold;
+}
+
+.location {
+    font-size: larger;
+    font-family: 'Europa', sans-serif;
+    text-align: center;
+}
+
+.like {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    place-items: center;
+    margin: 1rem 2rem;
+}
+
+.like>p {
+    font-family: 'Eurostile';
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.like>div {
+    display: grid;
+    place-items: center;
+    background-color: #5BE9B9;
+    border-radius: 100%;
+    height: 100px;
+    width: 100px;
+    font-family: 'Poppins';
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.likeBtn {
+    text-align: center;
+}
+
+.likeBtn>button {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: rgb(45, 50, 60);
+    font-family: 'Poppins', sans-serif;
+    font-size: large;
+    color: #fff;
+    padding: 15px 45px;
+    border-radius: 40px;
+    cursor: pointer;
+    border: none;
+}
+
+.likeBtn>button:hover {
+    background-color: #5BE9B9;
+    color: #000;
+    transition: ease .4s;
+}
+
+@media only screen and (max-width: 450px) {
+    .aboutMe:nth-child(1) {
+        height: fit-content;
+    }
+}

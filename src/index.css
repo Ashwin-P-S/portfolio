@@ -1,159 +1,84 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
-@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
 * {
-    padding: 0;
-    margin: 0;
+    scroll-behavior: smooth;
 }
+
 body {
-    background-color: ghostwhite;
+    background-color: #8BC6EC;
+    background-image: linear-gradient(90deg, #8BC6EC 0%, #9599E2 100%);
+}
+
+.card {
+    scroll-behavior: smooth;
+    margin: 2rem 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 12px 15px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
 }
 
 .navbar {
-    font-family: Poppins, 'sans-serif';
+    font-family: 'Europa', "sans-serif";
     font-size: 1.4rem;
-    display: flex;    
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     background-color: rgb(45, 50, 60);
     color: white;
     padding: 1.25rem;
-    cursor: pointer;
+    border-radius: 1rem;
+}
+
+.menuBtn {
+    display: none;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    background-color: #fff;
+    height: 1px;
+    width: 25px;
+    margin: 6px 0;
+    transition: .4s;
 }
 
 .linksContainer {
     display: flex;
-    flex-wrap: wrap;
-    font-family: Hack, 'monospace';
+    place-items: center;
 }
 
 .welcome {
-    margin: .5rem 1rem;;
+    font-family: 'Eurostile', sans-serif;
+    font-size: x-large;
 }
 
 .welcome:hover {
-    color:aquamarine;
+    color: #8bc6ec;
     transition: 1s;
+    cursor: pointer;
 }
 
 .links {
-    margin: .5rem 1rem; 
+    margin: 0 16px;
     text-decoration: none;
-    color: aliceblue;
+    color: #fff;
 }
 
 .links:hover {
-    transition: .5s;
-    color: aquamarine;
+    transition: .2s;
+    /* color: #8bc6ec; */
+    border-bottom: 1px solid #fff;
+    border-bottom-style: dashed;
 }
 
-.container {
-    padding: 2rem;
-    margin: 3rem;
-    border: 1px solid #e7e7e7;
-    box-shadow: 0 4px 8px darkgray;
-    text-align: center;
-}
-
-.container > p:nth-child(1){
-    font-family: Gadugi, 'san-serif';
-    color: darkslategrey;
-    font-size: 2rem;
-    cursor: pointer;
-} .container > p:nth-child(1):hover { color:black; transition: 2s; }
-
-.container > p:nth-child(2) {
-    font-family: Poppins, 'sans-serif';
-    font-size: x-large;
-}
-
-.subContainer > div {
-    padding: 2rem;
-    margin: 3rem;
-    font-family: Poppins, 'sans-serif';
-    font-size: x-large;
-    text-align: center;
-    text-shadow: 2px solid #e7e7e7;
-}
-
-.subContainer > p {
-    display: flex;
-    flex-wrap: wrap;
-    font-family: Poppins, 'sans-serif';
-    padding: 2rem;
-    margin: 3rem;
-    font-size: 1.3rem;
-    background-color: whitesmoke;
-    border-left: 4.5px solid rgb(45, 50, 60);
-}
-
-.aboutContainer{
-    padding: 2rem;
-    margin: 3rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    justify-content: space-evenly;
-}
-
-.likes {
-    border: 1px solid #e7e7e7;
-    box-shadow: 0 4px 8px darkgray;
-    padding: 2rem;
-    margin: 1.5rem;
-    text-align: center;
-}
-
-.likes > button {
-    text-decoration: none;
-    font-family: 'Lucida Sans';
-    margin-top: 20px;
-    font-size: large;
-    background-color: ghostwhite;
-    cursor: pointer;
-    border: 0;
-    color: blue;
-} .likes > button:hover { color: mediumvioletred; transition: .5s; }
-
-
-.likes > p {
-    font-family: Gadugi;
-    font-size: xx-large;
-}
-
-.aboutMe {
-    border: 1px solid #e7e7e7;
-    box-shadow: 0 4px 8px darkgray;
-    padding: 2rem;
-    margin: 1.5rem;
-    text-align: center;
-    align-items: center;
+.contact {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    align-items: center;
 }
 
-.aboutMe > p {
-    font-family: Poppins;
-    font-size: large;
-}
-.location {
-    
-    padding: 1rem;
-    margin: 1.5rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    text-align: center;
-    height: fit-content;
-} 
-.location > p > span { font-size: 3rem;color: rgb(45, 50, 60); }
-.location > p > span:hover { cursor: pointer; color: mediumpurple; transition: 1s; }
-
-.location > p{
-    font-family: Gadugi;
-    font-size: large;
-}
-.contact { display: flex; flex-direction: column; align-items: center;}
 .contactContainer {
     padding: 1rem 2rem;
     margin: 1.5rem;
@@ -164,16 +89,22 @@ body {
     box-shadow: 0 4px 8px darkgrey;
 }
 
-.contactContainer > a , .socialContainer > a{
+.contactContainer>a,
+.socialContainer>a {
     text-decoration: none;
     font-size: x-large;
     margin-top: 10px;
     color: rgb(45, 50, 60);
     font-family: Poppins;
 }
-.socialContainer > a:hover{ color: mediumvioletred; transition: .2s; }
-.contactContainer > span {
-    font-size: 3rem;   
+
+.socialContainer>a:hover {
+    color: mediumvioletred;
+    transition: 0.2s;
+}
+
+.contactContainer>span {
+    font-size: 3rem;
 }
 
 .socialContainer {
@@ -187,8 +118,90 @@ body {
     box-shadow: 0 4px 8px darkgrey;
     width: fit-content;
 }
-.imageContainer > img {
-    margin: .5rem .5rem;
+
+.imageContainer>img {
+    margin: 0.5rem 0.5rem;
     height: 2rem;
     width: 2rem;
+}
+
+@media only screen and (max-width: 420px) {
+
+    html {
+        height: 100%;
+    }
+
+    body {
+        margin: 0;
+    }
+
+    .navbar {
+        border-radius: 0 0 16px 16px;
+    }
+}
+
+@media only screen and (max-width: 599px) {
+    .linksContainer {
+        flex-direction: column;
+        margin: 8px;
+    }
+
+    .links {
+        margin: 10px;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .welcome {
+        text-align: center;
+    }
+
+    :active,
+    .bar1,
+    .bar2,
+    .bar3 {
+        transform: none;
+    }
+
+    .menuBtn {
+        display: grid;
+        place-items: end;
+    }
+
+    .menu:hover>.bar1 {
+        transform: rotate(-45deg);
+        height: 2px;
+    }
+
+    .menu:hover>.bar2 {
+        opacity: 0;
+    }
+
+    .menu:hover>.bar3 {
+        transform: rotate(45deg) translate(-10px, -10px);
+        height: 2px;
+    }
+
+}
+
+@media only screen and (max-width: 870px) {
+
+    .card {
+        margin: auto;
+    }
+
+    .container {
+        margin: 25px;
+    }
+
+    .container>p:nth-child(3) {
+        font-size: large;
+    }
+
+    .profile {
+        flex-wrap: wrap;
+    }
 }

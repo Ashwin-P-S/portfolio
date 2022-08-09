@@ -1,0 +1,120 @@
+@import url('https://fonts.cdnfonts.com/css/eurostile');
+@import url('https://db.onlinewebfonts.com/c/23c0fcab84d99da0de762de7e220a6e1?family=Europa');
+
+.projectsBox {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 16px 0;
+}
+
+.works>p {
+    font-family: 'Eurostile';
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.works>p:nth-child(2) {
+    font-family: 'Europa', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 100;
+    padding: 5px;
+    margin: 10px;
+}
+
+img {
+    height: 50%;
+    width: 50%;
+    margin: 16px;
+    background-size: cover;
+}
+
+.worksBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 1rem .5rem;
+}
+
+.projects {
+    border-radius: 16px;
+    margin: 2rem 1rem;
+    padding: 1rem;
+    border: 1.9px solid rgb(45, 50, 60);
+    box-shadow: 0 12px 15px rgba(0, 0, 0, 0.1);
+    display: grid;
+    place-items: center;
+    height: 300px;
+    width: 300px;
+    transition: .3s;
+}
+
+/* .projects:hover {
+    transform: translateY(-5px);
+    transition: ease .3s;
+    box-shadow: 0 12px rgb(45, 50, 60);
+} */
+
+.projects>h3 {
+    font-family: 'Europa', sans-serif;
+    font-size: x-large;
+}
+
+.projects>h3:hover {
+    color: #6E07F3;
+    transition: ease .4s;
+    cursor: default;
+}
+
+.desc {
+    font-family: 'Europa', sans-serif;
+    font-size: large;
+    display: grid;
+    margin: 0 10px;
+}
+
+.codeBtn {
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.input {
+    font-family: 'Poppins', sans-serif;
+    font-size: small;
+    background-color: #2D323C;
+    border-radius: 75px;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px 30px;
+    margin: 16px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.input:hover {
+    color: #000;
+    background-color: #5BE9B9;
+    box-shadow: 0 2px 4px #5BE9B9;
+    transition: ease .5s;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1000px) {
+    img {
+        height: 75%;
+        width: 75%
+    }
+
+    .projects:hover {
+        transform: none;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .projects {
+        height: fit-content;
+        width: fit-content;
+    }
+}

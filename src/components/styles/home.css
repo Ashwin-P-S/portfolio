@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+@import url('https://db.onlinewebfonts.com/c/23c0fcab84d99da0de762de7e220a6e1?family=europa');
+
+@import url('https://fonts.cdnfonts.com/css/eurostile');
+
+.wrap {
+    align-items: center;
+    text-align: center;
+    display: grid;
+    place-items: center;
+}
+
+.container {
+    display: flex;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 2rem;
+    margin: 2rem;
+    width: 50%;
+    transition: 1s;
+}
+
+.container:hover {
+    box-shadow: 0 4px 8px rgb(45, 50, 60);
+    transition: 1s;
+}
+
+.profile {
+    height: fit-content;
+    width: fit-content;
+    margin: 10px;
+}
+
+
+.content>p:nth-child(1) {
+    font-family: 'Europa', sans-serif;
+    font-size: 3rem;
+    cursor: default;
+}
+
+.content>p:nth-child(2) {
+    font-family: 'Poppins', sans-serif;
+    font-size: larger;
+}
+
+.content>p:nth-child(2)>a {
+    text-decoration: none;
+    color: #000;
+}
+
+.content>p>a:hover {
+    color: #7510F7;
+    transition: .5s;
+}
+
+.subContainer {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    font-family: 'Europa';
+}
+
+.subContainer>div {
+    display: grid;
+    place-items: center;
+    width: 50%;
+    font-size: x-large;
+}
+
+.whatIDo {
+    font-family: 'Eurostile';
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+.whatBox>img {
+    padding: 10px;
+    height: 45px;
+    width: 45px;
+}
+
+.whatBox {
+    background-color: #5BE9B9;
+    width: 101px;
+    height: 97px;
+    border-radius: 100%;
+}
+
+.subContainer>p {
+    background-color: rgb(45, 50, 70);
+    padding: 2rem;
+    font-size: large;
+    color: #fff;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.subContainer>div>img {
+    margin: 20px;
+    height: 50px;
+    width: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        margin: 2rem 0;
+        padding: 70px;
+    }
+
+    .subContainer>div {
+        width: 75%;
+    }
+}
