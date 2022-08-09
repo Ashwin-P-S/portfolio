@@ -1,5 +1,10 @@
 @import url('../../index.css');
 
+.aboutWrap {
+    margin: 5px;
+    padding-bottom: 1rem;
+}
+
 .about {
     display: flex;
     justify-content: space-evenly;
@@ -12,9 +17,9 @@
 .aboutMe {
     display: grid;
     margin: 1rem;
-    box-shadow: 0 12px 15px rgba(0, 0, 0, .1);
+    box-shadow: 5px 12px 15px rgba(40, 50, 60, .1);
     border-radius: 1rem;
-    border: 1px solid rgba(0, 0, 0, .1);
+    border: 1.7px solid rgb(45, 50, 60);
     height: 375px;
     width: 375px;
     padding: 16px;
@@ -121,8 +126,70 @@ span {
     transition: ease .4s;
 }
 
+.socialBox {
+    margin: 10px;
+    padding: 10px;
+    display: grid;
+    place-items: center;
+}
+
+.connect {
+    font-size: 3rem;
+    font-family: 'Eurostile', sans-serif;
+    font-weight: bold;
+}
+
+.social {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 60%;
+}
+
+.social>a {
+    margin: 10px;
+    background-color: #5BE9B9;
+    width: fit-content;
+    border-radius: 100%;
+    box-shadow: 0 2px 2px #5BE9B9;
+}
+
+.social>a:hover {
+    transition: .3s;
+    box-shadow: 0 0 1px 1px #000;
+    transform: translateY(-3px);
+}
+
+.social>a>img {
+    height: 45px;
+    width: 45px;
+}
+
 @media only screen and (max-width: 450px) {
     .aboutMe:nth-child(1) {
         height: fit-content;
     }
+
+    .connect>p {
+        font-size: xx-large;
+    }
+}
+
+@media only screen and (max-width: 712px) {
+
+    .social {
+        width: 100%;
+    }
+
+    .social>a {
+        margin: 5px;
+        height: fit-content;
+        width: fit-content;
+    }
+
+    .social>a>img {
+        height: 30px;
+        width: 30px;
+    }
+
 }

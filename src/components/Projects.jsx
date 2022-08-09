@@ -4,7 +4,7 @@ import works from "./assets/works.svg"
 function Projects() {
 
     return (
-        <div className="projectsBox" data-aos={"fade-down"} >
+        <div className="projectsBox" data-aos={"fade-down"} data-aos-duration="500">
 
             <div className="works">
                 <p> My Recent Works </p>
