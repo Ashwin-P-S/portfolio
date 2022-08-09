@@ -185,6 +185,7 @@ span {
         margin: 5px;
         height: fit-content;
         width: fit-content;
+        box-shadow: 0 0 1px 1px #000;
     }
 
     .social>a>img {
