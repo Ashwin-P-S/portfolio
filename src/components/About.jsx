@@ -7,9 +7,9 @@ import "./styles/about.css"
 function About({ count }) {
     const [like, increaseLike] = useState(count);
     return (
-        <div className='about'>
+        <div className='about' data-aos={"fade-down"} >
 
-            <div className="aboutMe" data-aos={"fade-left"} data-aos-duration="1200" >
+            <div className="aboutMe">
                 <div className="deg">
                     <p> My Education </p>
                     <div>
@@ -27,7 +27,7 @@ function About({ count }) {
                 </div>
             </div>
 
-            <div className="aboutMe" data-aos={"fade-down"} data-aos-duration="800">
+            <div className="aboutMe">
                 <div className="deg">
                     <p> My Location </p>
                     <div>
@@ -39,7 +39,7 @@ function About({ count }) {
                 </div>
             </div>
 
-            <div className="aboutMe" data-aos={"fade-right"} data-aos-duration="1200">
+            <div className="aboutMe">
                 <div className="like">
                     <p> Likes. </p>
                     <div>

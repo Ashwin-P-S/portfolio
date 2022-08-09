@@ -75,16 +75,9 @@ body {
 }
 
 .links {
-    margin: 0 16px;
+    margin: 2px 16px;
     text-decoration: none;
     color: #fff;
-}
-
-.links:hover {
-    transition: .2s;
-    /* color: #8bc6ec; */
-    border-bottom: 1px solid #fff;
-    border-bottom-style: dashed;
 }
 
 .contact {
@@ -199,6 +192,35 @@ body {
         height: 2px;
     }
 
+}
+
+@media only screen and (min-width: 599px) {
+    .links:nth-child(1):hover>span {
+        display: block;
+        height: 2px;
+        width: 30px;
+        background-color: #fff;
+        transform: translateX(24px);
+        transition: ease .5s;
+    }
+
+    .links:nth-child(2):hover>span {
+        display: flex;
+        height: 2px;
+        width: 40px;
+        background-color: #fff;
+        transform: translateX(37px);
+        transition: ease .5s;
+    }
+
+    .links:nth-child(3):hover>span {
+        display: flex;
+        height: 2px;
+        width: 30px;
+        background-color: #fff;
+        transform: translateX(27px);
+        transition: ease .5s;
+    }
 }
 
 @media only screen and (max-width: 870px) {

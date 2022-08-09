@@ -17,7 +17,7 @@ function Projects() {
 
             <div className="worksBox">
 
-                <div className="projects" data-aos={"fade-left"} data-aos-duration="1200" >
+                <div className="projects">
                     {"<"} / {">"} <br />
                     <h3> Weather App </h3>
                     <div className="desc">
@@ -37,7 +37,7 @@ function Projects() {
                     </div>
                 </div>
 
-                <div className="projects" data-aos={"fade-down"} >
+                <div className="projects">
                     {"<"} / {">"} <br />
                     <h3> Task Tracker </h3>
                     <div className="desc">
@@ -58,7 +58,7 @@ function Projects() {
 
                 </div>
 
-                <div className="projects" data-aos={"fade-right"} data-aos-duration="1200" >
+                <div className="projects">
                     {"<"} / {">"}
                     <h3> Railway Reservation System </h3>
                     <div className="desc">

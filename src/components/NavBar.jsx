@@ -40,11 +40,10 @@ function NavBar() {
 
       {
         (toggleMenu || screenWidth > 600) && (
-          <div className="linksContainer" data-aos={"fade-down"}>
-            <Link to='/' className="links" onClick={toggleNav} data-aos={"fade-left"} data-aos-duration={"800"} > Home </Link>
-            <Link to='/projects' className='links' onClick={toggleNav} data-aos={"fade-left"} data-aos-duration={"1200"}> Projects </Link>
-            <Link to='/about' className="links" onClick={toggleNav} data-aos={"fade-left"} data-aos-duration={"1600"}> About  </Link>
-            {/* <Link to='/contact' className="links" >  Contact  </Link> */}
+          <div className="linksContainer">
+            <Link to='/' className="links" onClick={toggleNav} data-aos={"fade-down"} > Home <span></span></Link>
+            <Link to='/projects' className='links' onClick={toggleNav} data-aos={"fade-down"}> Projects <span></span> </Link>
+            <Link to='/about' className="links" onClick={toggleNav} data-aos={"fade-down"}> About <span></span> </Link>
           </div>
         )
       }

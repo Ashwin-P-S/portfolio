@@ -35,7 +35,7 @@ function Home() {
                     </p>
                     <img src={happy} alt="happy" />
                 </div>
-                <p data-aos={"fade-down"} data-aos-duration="800" >
+                <p>
                     Keep smiling be'coz life is a beautiful thing and there's so much to smile about
                 </p>
             </div>
