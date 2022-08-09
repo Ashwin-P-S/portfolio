@@ -1,7 +1,21 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
-@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap"); */
 
-* {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+@import url('https://fonts.cdnfonts.com/css/eurostile');
+
+@font-face {
+    font-family: 'Europa';
+    src: url('./components/fonts/europa-regular-webfont.eot');
+    src: url('./components/fonts/europa-regular-webfont.eot?#iefix') format('embedded-opentype'),
+        url('./components/fonts/europa-regular-webfont.woff2') format('woff2'),
+        url('./components/fonts/europa-regular-webfont.woff') format('woff'),
+        url('./components/fonts/europa-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html {
     scroll-behavior: smooth;
 }
 
@@ -19,7 +33,7 @@ body {
 }
 
 .navbar {
-    font-family: 'Europa', "sans-serif";
+    font-family: 'Europa', sans-serif;
     font-size: 1.4rem;
     display: flex;
     flex-wrap: wrap;

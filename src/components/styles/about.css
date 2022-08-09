@@ -1,5 +1,6 @@
-@import url('https://db.onlinewebfonts.com/c/23c0fcab84d99da0de762de7e220a6e1?family=Europa');
-@import url('https://fonts.cdnfonts.com/css/eurostile');
+/* @import url('https://fonts.cdnfonts.com/css/eurostile'); */
+
+@import url('../../index.css');
 
 .about {
     display: flex;
