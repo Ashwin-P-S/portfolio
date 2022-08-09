@@ -1,6 +1,11 @@
-# My Portfolio
+# Website for Me
 
-- Live here ✨ [https://ashwinsiva54.vercel.app/](https://ashwinsiva54.vercel.app/)
+- Hi, I'm Ashwin. Nice to Meet you
+
+- Handcrafted by me !
+
+- Site is live ✨
+  - [AshwinSiva54.vercel.app](https://ashwinsiva54.vercel.app/)
 
 ## Getting Started with Create React App
 
