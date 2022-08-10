@@ -7,7 +7,7 @@ function Projects() {
         <div className="projectsBox" data-aos={"fade-down"} data-aos-duration="500">
 
             <div className="works">
-                <p> My Recent Works </p>
+                <p> My Recent Work </p>
                 <p> Here's a few projects I've developed </p>
             </div>
 
@@ -18,7 +18,7 @@ function Projects() {
             <div className="worksBox">
 
                 <div className="projects">
-                    {"<"} / {">"} <br />
+                    {"< / >"} <br />
                     <h3> Weather App </h3>
                     <div className="desc">
                         <p>
@@ -38,7 +38,7 @@ function Projects() {
                 </div>
 
                 <div className="projects">
-                    {"<"} / {">"} <br />
+                    {"< / >"} <br />
                     <h3> Task Tracker </h3>
                     <div className="desc">
                         <p>
@@ -59,7 +59,7 @@ function Projects() {
                 </div>
 
                 <div className="projects">
-                    {"<"} / {">"}
+                    {"< / >"}
                     <h3> Railway Reservation System </h3>
                     <div className="desc">
                         <p>

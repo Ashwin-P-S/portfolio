@@ -7,10 +7,11 @@
     margin: 16px 0;
 }
 
-.works>p {
-    font-family: 'Eurostile';
+.works>p:nth-child(1) {
+    font-family: 'Eurostile', sans-serif;
     font-size: xx-large;
-    font-weight: bold;
+    font-weight: bolder;
+    color: #141C3A;
 }
 
 .works>p:nth-child(2) {
@@ -51,6 +52,7 @@ img {
 .projects>h3 {
     font-family: 'Europa', sans-serif;
     font-size: x-large;
+    color: #141C3A;
 }
 
 .projects>h3:hover {
