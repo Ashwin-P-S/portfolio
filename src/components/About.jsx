@@ -4,7 +4,7 @@ import "./styles/about.css"
 import degree from "./assets/degree.svg"
 import location from "./assets/location.svg"
 import github from "./assets/github.svg"
-import twitter from "./assets/twitter.svg"
+import twitter from "./assets/twitterX.svg"
 import linkedin from "./assets/linkedin.svg"
 import mail from "./assets/mail.svg"
 
