@@ -22,9 +22,8 @@
     margin: 10px;
 }
 
-img {
-    height: 50%;
-    width: 50%;
+.img>img {
+    width: 35%;
     margin: 16px;
     background-size: cover;
 }
@@ -44,8 +43,7 @@ img {
     box-shadow: 10px 12px 15px rgba(0, 0, 0, 0.1);
     display: grid;
     place-items: center;
-    height: 350px;
-    width: 350px;
+    max-width: 350px;
     transition: .3s;
 }
 
@@ -69,7 +67,7 @@ img {
 }
 
 .codeBtn {
-    margin: 10px;
+    margin: 5px 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -96,8 +94,35 @@ img {
     cursor: pointer;
 }
 
+#reactId {
+    height: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+#cProgram,
+#laravelId {
+    height: 55px;
+}
+
+.php-mysql-id {
+    margin: 0;
+    display: flex;
+}
+
+#phpId {
+    height: 75px;
+    margin: 0 10px;
+}
+
+#mysqlId {
+    height: 40px;
+    margin: 0 10px;
+    transform: translateY(10px);
+}
+
 @media only screen and (max-width: 1000px) {
-    img {
+    .img>img {
         height: 75%;
         width: 75%
     }

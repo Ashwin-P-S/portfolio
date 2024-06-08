@@ -22,12 +22,14 @@ function About({ count }) {
                         </div>
                     </div>
                     <div className="score">
+                        <p>PSNA College of Engineering and Technology</p>
                         <p>
                             <span> UG </span>
-                            <br /> <br />
+                        </p>
+                        <p>
                             Computer Science and Engineering
-                            <br />
-                            2020 - 2024
+                            <br /> <br />
+                            2020 - 2024  &nbsp;|&nbsp; 91.8 %
                         </p>
                     </div>
                 </div>
@@ -40,7 +42,9 @@ function About({ count }) {
                         </div>
                     </div>
                     <div className="location">
-                        <p> I'm from Madurai. <br /> <br /> Tamil Nadu | India </p>
+                        <p> I'm from </p>
+                        <h2> Madurai </h2>
+                        <p> Tamil Nadu | India </p>
                     </div>
                 </div>
 
