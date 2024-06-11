@@ -94,7 +94,7 @@ function Projects() {
                     <div className="desc">
 
                         <p>
-                            Agriculture products Shopping WebApp. AgroProduct System make better connection among Farmers and Buyers ensures food and ignores Middleman.
+                            Agriculture products Shopping WebApp. AgroProduct System makes better connection among Farmers and Buyers ensures food quality and ignores Middleman.
                         </p>
 
                     </div>
