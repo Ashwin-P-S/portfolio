@@ -83,6 +83,15 @@ body {
     margin: 2px 16px;
     text-decoration: none;
     color: #fff;
+    cursor: pointer;
+}
+
+.links>span{
+    display: block;
+    height: 2px;
+    width: 30px;
+    background-color: #2D323C;
+    border: 1px solid #2D323C;
 }
 
 @media only screen and (max-width: 420px) {
